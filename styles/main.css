@@ -1,0 +1,130 @@
+:root {
+  --clr-900: hsl(217, 54%, 11%);
+  --clr-800: hsl(216, 50%, 16%);
+  --clr-700: hsl(215, 32%, 27%);
+  --clr-400: hsl(215, 51%, 70%);
+  --clr-300: hsl(178, 100%, 50%);   
+  --clr-white: hsl(0, 0%, 100%);
+
+  --ff-base: "Outfit", sans-serif;
+
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-600: 600;
+
+  --fs-base: 1rem;
+  --fs-small: 1rem; 
+
+}
+
+body{
+  background-color: var(--clr-900);
+  font-family: var(--ff-base);
+  font-weight: var(--fw-300);
+  font-size: var(--fs-base);
+  color: var(--clr-400);
+  margin-top: 5rem;
+}
+
+.main{
+  width: 20rem;
+  margin: auto;
+  background-color: var(--clr-800);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.ilustration{
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.view-button{
+ background-color: transparent;
+ border: none;
+ position: absolute;
+ top: 0;
+ width: 100%;
+ height: 100%;  
+ opacity: 0;
+ background: hsl(178, 100%, 50%, 30%);
+ border-radius: 0.5rem;
+ cursor: pointer;
+}
+
+.view-button:focus,
+.view-button:hover{
+  opacity: 1;
+  outline: none;
+  border: 1px solid var(--clr-300);
+}
+
+.view-button img{
+  position: absolute;
+  top: 7rem;
+  right: 7rem;
+}
+
+.time-div{
+  display: flex;
+  justify-content: space-between;
+}
+
+h1{
+  padding-top: .5rem;
+  color: var(--clr-white);
+  font-size: 22px;
+  font-weight: var(--fw-400);  
+}
+
+h1 a{
+  text-decoration: none;
+  color: var(--clr-white);
+}
+
+.main-paragraph{
+  font-size: var(--fs-small);
+}
+.util-grid{
+  display: grid;
+  grid-template-columns: 17px 1fr;
+  align-items: center;
+  gap: 0.125rem;
+}
+
+.eth{
+  color: var(--clr-300);
+  font-weight: var(--fw-600);
+}
+
+.avatar-flex{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid hsl(215, 51%, 70%, 50%);;
+}
+
+.avatar{
+  width: 36px;
+  border: 1px solid var(--clr-white);
+  border-radius: 50%;
+}
+
+.name{
+  color: var(--clr-white);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+h1 a:focus,
+h1 a:hover,   
+.name:focus,
+.name:hover{
+  outline: none;
+  border: 1px solid hsl(178, 100%, 50%, 50%);
+  color: var(--clr-300);
+}
